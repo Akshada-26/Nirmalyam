@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Wastewizard</string>
+
+    <string-array name="waste_types">
+        <item>E-Waste</item>
+        <item>Recyclable Waste</item>
+
+        <!-- Add more waste types as needed -->
+    </string-array>
+
+    <string-array name="garbage_collecter">
+        <item>Bulk Pickup</item>
+        <item>Recycling</item>
+        <item>Regular Trash</item>
+
+        <!-- Add more waste types as needed -->
+    </string-array>
+
+    <string-array name="dropdown_items">
+        <item>Ward 1</item>
+        <item>Ward 2</item>
+        <item>Ward 3</item>
+        <item>Ward 4</item>
+        <item>Ward 5</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>

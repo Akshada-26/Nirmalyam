@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="372dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/main_logo" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Address"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/appLogo"
+        android:layout_margin="25dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Describe the Issue"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:layout_below="@id/editTextAddress"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Complaint"
+        android:layout_below="@id/editTextComplaint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

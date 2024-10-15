@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- User Information Section -->
+    <TextView
+        android:id="@+id/userInfoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Information"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="#AEB7C2" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/userInfoTextView"
+        android:background="@drawable/border_color"
+        android:elevation="8dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/userUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Username"
+            android:textSize="16sp"
+            android:textColor="@color/Darkgrey" />
+
+        <TextView
+            android:id="@+id/userAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Address"
+            android:textSize="16sp"
+            android:textColor="@color/Darkgrey" />
+
+    </LinearLayout>
+
+    <!-- Scrollable Mini Window: Society Score Board -->
+
+    <!-- Municipal Corporation Details Menu -->
+
+    <!-- Complaint Box Window -->
+
+    <!-- Dummy Data for Municipal Corporation Details -->
+
+    <!-- Bottom Navigation -->
+
+    <ScrollView
+        android:id="@+id/societyScoreBoardScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/userUsername"
+        android:layout_marginTop="168dp">
+
+        <LinearLayout
+            android:id="@+id/societyScoreBoardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#01BDDB"
+            android:orientation="vertical">
+
+            <!-- Main Heading for Society Score Board -->
+            <TextView
+                android:id="@+id/societyScoreBoardHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Society Score Board"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Dummy Data for Society Score Board -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Ranjanvan Society" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Shree Hari Society" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Halt Society" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Baskin Society" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/municipalCorpDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/societyScoreBoardScrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="101dp"
+        android:background="#3AB9AB"
+        android:padding="10dp"
+        android:text="Municipal Corporation Details" />
+
+    <TextView
+        android:id="@+id/municipalCorpDetailsContentTextView"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/municipalCorpDetailsTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="39dp"
+        android:background="#AEB7C2"
+        android:padding="10dp"
+        android:text="Municipal Corporation Address: Anand Nagar, Nanded,Maharashtra                                                           Unique id:- 193283838"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/complainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Complain Box"
+        android:layout_below="@id/municipalCorpDetailsContentTextView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:elevation="18dp"
+        android:orientation="horizontal">
+
+
+
+        <!-- Home Button -->
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textColor="@android:color/black" />
+
+        <!-- Garbage Collector Button -->
+        <Button
+            android:id="@+id/garbageCollectorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="waste Collector"
+            android:textColor="@android:color/black" />
+
+        <!-- Zero Waste Page Button -->
+        <Button
+            android:id="@+id/zeroWastePageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Zero Waste"
+            android:textColor="@android:color/black" />
+
+        <!-- Virtual Swap Button -->
+        <Button
+            android:id="@+id/virtualSwapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Virtual Swap"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>

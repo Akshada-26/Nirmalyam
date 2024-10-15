@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "468754825618",
+    "project_id": "wastewizard-3c8a2",
+    "storage_bucket": "wastewizard-3c8a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468754825618:android:49492e00795675d9aec14b",
+        "android_client_info": {
+          "package_name": "com.example.wastewizard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM_SqsuairaXGq7rguo8GimlVDk80u8UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
